@@ -35,12 +35,12 @@ def processRequest(req):
 def makeWebhookResult(req):
     result = req.get("result")
     parameters = result.get("parameters")
-    gameType = parameters.get("programming")
+    gameName = parameters.get("gameName")
 
-    if (gameType == "Haberdashery"):
+    if (gameName == "Haberdashery"):
         speech = "SheepInHats!"
     else:
-        speech = gameType
+        speech = gameName
 
     return {
         "speech": speech,
