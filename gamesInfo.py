@@ -77,7 +77,7 @@ def makeWebhookResult(req):
         "speech": gameInfoVoice,
         "displayText": gameInfo,
         # "data": {"slack": gameInfo},
-        # "data": {"facebook": gameInfo},
+        "data": {"facebook": gameInfo},
         "source": "LunaBot"
     }
 
