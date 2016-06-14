@@ -74,10 +74,10 @@ def makeWebhookResult(req):
         gameInfo = "Game not found"
 
     return {
-        "speech": gameInfoVoice,
+        "speech": gameInfo,
         "displayText": gameInfo,
         # "data": {"slack": gameInfo},
-        "data": {"facebook": gameInfo},
+        # "data": {"facebook": gameInfo},
         "source": "LunaBot"
     }
 
